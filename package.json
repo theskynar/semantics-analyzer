@@ -1,0 +1,13 @@
+{
+  "name": "semantics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "ava -s -v -T 15s test/*.js"
+  },
+  "devDependencies": {
+    "ava": "1.0.0-rc.1",
+    "wait-group-promise": "^0.2.0"
+  }
+}
