@@ -50,8 +50,8 @@ class SemanticAnalyzer extends EventEmitter {
     }
   
     if (inner(c)) {
-      this.stackOperatorsStorage.push(this.operators);
-      this.stackOperandsStorage.push(this.operands);
+      this.stackOperatorsStorage.push(this.operators.slice());
+      this.stackOperandsStorage.push(this.operands.slice());
       this.operators = [];
       this.operands = [];
       return this.processRecursively(expression);
