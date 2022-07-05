@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: semantics-analyzer
+  description: Analyzer
+  annotations:
+    github.com/project-slug: rikez/semantics-analyzer
+  tags:
+    - go
+spec:
+  type: service
+  lifecycle: production
+  owner: dg-devex-team
